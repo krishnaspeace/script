@@ -23,4 +23,4 @@ source build/envsetup.sh
 lunch evolution_ysl-userdebug
 # Build confriguration
 make installclean
-m evolution
+mka evolution
