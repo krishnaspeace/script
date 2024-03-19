@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-# Remove directory
-rm -rf .repo/* prebuilts/clang/host/linux-x86
-rm -rf build
-rm -rf prebuilts/rust
-=======
-
->>>>>>> a2336c3 (update sync command)
 # Clone local_manifests repository
 git clone https://github.com/krishnaspeace/local_manifests.git --depth 1 -b evo .repo/local_manifests
 if [ ! 0 == 0 ]
