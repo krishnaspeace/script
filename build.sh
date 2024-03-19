@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 # Remove directory
 rm -rf .repo/* prebuilts/clang/host/linux-x86
 rm -rf build
 rm -rf prebuilts/rust
+=======
+
+>>>>>>> a2336c3 (update sync command)
 # Clone local_manifests repository
 git clone https://github.com/krishnaspeace/local_manifests.git --depth 1 -b evo .repo/local_manifests
 if [ ! 0 == 0 ]
@@ -9,7 +13,7 @@ if [ ! 0 == 0 ]
 # Initialize evo repository
 repo init -u https://github.com/Evolution-X/manifest -b udc
 # repo sync
-repo sync -c -j4 --force-sync --no-clone-bundle --no-tags --depth 1
+/opt/crave/resync.sh
 # fixing fingerprint
 rm -rf vendor/fingerprint/opensource/interfaces
 git clone https://github.com/xiaomi-msm8953-devs/android_vendor_fingerprint_opensource_interfaces vendor/fingerprint/opensource/interfaces
